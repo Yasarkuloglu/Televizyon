@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player Fix</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.12/hls.min.js"></script>
+    <style>
+        body { background: #1a1a1a; color: white; font-family: sans-serif; margin: 0; padding: 0; }
+        
+        /* Video alanını görünür kılmak için yükseklik şart */
+        #video-container { width: 100%; max-width: 800px; margin: auto; background: #000; }
+        video { width: 100%; aspect-ratio: 16/9; display: block; }
+
+        .ui-box { padding: 20px; text-align: center; background: #222; border-bottom: 2px solid #333; }
+        input { padding: 12px; width: 60%; border-radius: 4px; border: none; }
+        button { padding: 12px 20px; background: #e50914; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        
+        #list { padding: 20px; max-width: 800px; margin: auto; }
+        .channel-item { 
+            background: #333; padding: 15px; margin-bottom: 8px; 
+            border-radius: 5px; cursor: pointer; transition: 0.2s;
+        }
+        .channel-item:hover { background: #444; }
+        .status { color: #aaa; font-size: 14px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="ui-box">
+    <h2>IPTV Oynatıcı</h2>
+    <input type="text" id="m3uUrl" placeholder="M3U Linkini Buraya Yapıştırın">
+    <button onclick="loadList()">LİSTEYİ YÜKLE</button>
+    <div id="status" class="status">Henüz liste yüklenmedi.</div>
+</div>
+
+<div id="video-container">
+    <video id="video" controls playsinline></video>
+</div>
+
+<div id="list">
+    </div>
+
+<script>
+    const video = document.getElementById('video');
+    const status = document.getElementById('status');
+    const listContainer = document.getElementById('list');
+    let hls = new Hls();
+
+    // 1. LİSTEYİ ÇEKME FONKSİYONU
+    async function loadList() {
+        const url = document.getElementById('m3uUrl').value.trim();
+        if(!url) return alert("Lütfen bir link girin!");
+
+        status.innerText = "Bağlanıyor... (Proxy üzerinden deneniyor)";
+        
+        // Bilgisayar ve telefonda CORS engelini aşmak için
+        const proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
+
+        try {
+            const response = await fetch(proxyUrl);
+            if (!response.ok) throw new Error("Bağlantı hatası");
+            const data = await response.text();
+            
+            if (data.includes("#EXTINF")) {
+                parseM3U(data);
+            } else {
+                status.innerText = "Hata: Geçerli bir M3U dosyası bulunamadı!";
+            }
+        } catch (err) {
+            status.innerText = "Bağlantı Reddeldildi! Link hatalı olabilir veya sunucu izin vermiyor.";
+            console.error(err);
+        }
+    }
+
+    // 2. M3U PARSE (AYRIŞTIRMA)
+    function parseM3U(text) {
+        const lines = text.split('\n');
+        listContainer.innerHTML = "";
+        let count = 0;
+        let tempName = "";
+
+        lines.forEach(line => {
+            line = line.trim();
+            if (line.startsWith("#EXTINF")) {
+                tempName = line.split(",").pop();
+            } else if (line.startsWith("http")) {
+                const name = tempName || "İsimsiz Kanal";
+                const streamUrl = line;
+                
+                const div = document.createElement('div');
+                div.className = "channel-item";
+                div.innerText = name;
+                div.onclick = () => playVideo(streamUrl);
+                listContainer.appendChild(div);
+                
+                count++;
+                tempName = "";
+            }
+        });
+        status.innerText = count + " adet kanal bulundu ve listelendi.";
+    }
+
+    // 3. VİDEO OYNATMA
+    function playVideo(url) {
+        status.innerText = "Oynatılıyor: " + url;
+        
+        if (Hls.isSupported()) {
+            hls.destroy(); // Eski yayını temizle
+            hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                video.play().catch(e => console.log("Otomatik oynatma engellendi, oynat düğmesine basın."));
+            });
+            
+            hls.on(Hls.Events.ERROR, (event, data) => {
+                if (data.fatal) status.innerText = "Yayın hatası: Bu link şu an aktif değil.";
+            });
+        } 
+        else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+            video.play();
+        }
+    }
+</script>
+
+</body>
+</html>
