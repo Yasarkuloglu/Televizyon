@@ -1,6 +1,10 @@
 #EXTM3U
 #EXTINF:-1,TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,SÖZCÜ TV
+https://helga.iptv2022.com/szc_tv/index.m3u8
+#EXTINF:-1,SÖZCÜ TV
+https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Sozcu_Tv.m3u8
 #EXTINF:-1,MELTEM TV
 https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
 #EXTINF:-1,MELTEM TV
@@ -673,6 +677,10 @@ https://trkvz-beta.daioncdn.net/aspor/aspor.m3u8?app=45f847c4-04e8-419a-a561-2eb
 https://new.cache-stream.workers.dev/stream/UCK3mI2lsk3LSo8PBUc8JTSw/live.m3u8
 #EXTINF:-1,HT SPOR (backup)
 https://livestream.zazerconer.workers.dev/channel/UCK3mI2lsk3LSo8PBUc8JTSw.m3u8
+#EXTINF:-1,SPOTIFY TURKEY • TRLIST 👤🎧🎤📻💯
+https://github.com/ipstreet312/freeiptv/raw/master/ressources/infos/barkers/sptr.ts
+#EXTINF:-1,SPOTIFY TURKEY • 2025 🎶🎵🎼🎹🪗🎸🎷🎺🎻🪕
+https://github.com/ipstreet312/freeiptv/raw/master/ressources/infos/barkers/sptr25.ts
 #EXTINF:-1,TRT MÜZİK
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,KRAL - KRAL POP
@@ -1199,7 +1207,3 @@ https://sc-kuzeykibrissmarttv.ercdn.net/tv2020/bantp1/playlist.m3u8
 https://spor.kuzeykibris.tv/m3u8/tv_2020.m3u8
 #EXTINF:-1,KK TV
 http://old.kuzeykibris.tv/m3u8/kktv.m3u8
-
-
-
-
