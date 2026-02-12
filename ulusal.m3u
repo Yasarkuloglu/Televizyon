@@ -7,6 +7,8 @@ http://tv-trt2.medya.trt.com.tr/master_720.m3u8
 https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
 #EXTINF:-1,TRT ÇOCUK
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT MÜZİK
+http://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,TRT AVAZ
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TRT TÜRK
@@ -29,6 +31,8 @@ https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald.m3u8
 http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1,STAR
 http://95.174.71.114/TR-STAR/index.m3u8
+#EXTINF:-1,NOW 
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1,SÖZCÜ TV
 https://trn03.tulix.tv/gt-sozcu-tv/playlist.m3u8
 #EXTINF:-1,HALK TV
@@ -343,6 +347,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
