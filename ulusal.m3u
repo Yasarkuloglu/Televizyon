@@ -21,8 +21,12 @@ http://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3&&app=7c4bb802-0c41-409e-8cd2-7999849
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
 #EXTINF:-1,SHOW
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
+#EXTINF:-1,SHOW MAX
+http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 #EXTINF:-1,KANAL D
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald.m3u8
+#EXTINF:-1,EURO D
+http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1,STAR
 http://95.174.71.114/TR-STAR/index.m3u8
 #EXTINF:-1,SÖZCÜ TV
@@ -57,8 +61,6 @@ https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
 #EXTINF:-1,YENİ ÇAĞ TV
 https://live.euromediacenter.com/yenicagtv/tracks-v1a1/mono.m3u8
-#EXTINF:-1,TÜRKMENELİ TV
-https://135962.global.ssl.fastly.net/5ff366a512987e2c0a3dabfe/live_14378e1002eb11ef9cb025207067897a/index.fmp4.m3u8
 #EXTINF:-1,TÜRK HABER
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
 #EXTINF:-1,FİNANS TÜRK
@@ -71,14 +73,10 @@ https://tv.ensonhaber.com/haberturk/haberturk.m3u8
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1,MELTEM TV 
 http://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
-#EXTINF:-1,BENGÜ TÜRK 
-https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
 #EXTINF:-1,24 
 https://ensonhaber-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1,BLOOMBERG HT
 https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
-#EXTINF:-1,BLOOMBERG HT 
-https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
 #EXTINF:-1,CNBC-E 
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1,TGRT HABER
@@ -89,12 +87,6 @@ https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1,BEYAZ TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
-#EXTINF:-1,BEYAZ TV
-https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d
-#EXTINF:-1,SHOW 
-http://ciner.daioncdn.net/showtv/showtv.m3u8?app=showtv_web
-#EXTINF:-1,ATV 
-http://95.174.71.114:80/TR-ATV/index.m3u8
 #EXTINF:-1,360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,360
@@ -109,16 +101,12 @@ https://cdn-onstv.yayin.com.tr/onstv/tracks-v1a1/mono.m3u8
 https://live.euromediacenter.com/tvmor/index.m3u8
 #EXTINF:-1,TEVE 2
 http://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
-#EXTINF:-1,SHOW MAX
-http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 #EXTINF:-1,A2 
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
 #EXTINF:-1,TEVE 2 
 http://demiroren.daioncdn.net/teve2/teve2.m3u8?app=web
 #EXTINF:-1,TV8 BUÇUK
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=bf58ab52-4865-4c81-b223-26b41009801e
-#EXTINF:-1,TRT BELGESEL 
-https://d2xwn494f2lep.cloudfront.net/v1/master/80dbfc318ab6b980679b32095ba497236de6d2f9/TRT-Belgesel/master.m3u8
 #EXTINF:-1,DMAX 
 http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
 #EXTINF:-1,TLC TR 
@@ -181,8 +169,6 @@ https://live.artidijitalmedya.com/artidijital_powertv/powertv/playlist.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e17cd6360b_1/playlist.m3u8
 #EXTINF:-1,KANAL 7 AVRUPA
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
-#EXTINF:-1,EURO D
-http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1,TGRT EU
 https://tgrt-live.ercdn.net/tgrteu/tgrteu.m3u8
 #EXTINF:-1,ÇİFTÇİ TV
@@ -357,6 +343,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
