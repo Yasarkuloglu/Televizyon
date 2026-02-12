@@ -11,12 +11,8 @@ https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TRT TÜRK
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
-#EXTINF:-1,eba tv - İlkokul
-https://tv-e-okul00.live.trt.com.tr/master.m3u8
-#EXTINF:-1,eba tv - Ortaokul
-https://tv-e-okul01.live.trt.com.tr/master.m3u8
-#EXTINF:-1,eba tv - Lise
-https://tv-e-okul02.live.trt.com.tr/master.m3u8
+#EXTINF:-1,ARABİ TV
+https://forum.donanimhaber.com/ExternalLinkRedirect?module=pgdcode&messageId=108742482&url=http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/master.m3u8
 #EXTINF:-1,TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TRT SPOR
@@ -363,6 +359,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
