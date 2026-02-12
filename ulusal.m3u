@@ -21,6 +21,8 @@ https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1,TRT DİYANET ÇOCUK
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,CNN TÜRK
+https://b.fulltvizle.com/cnn/playlist.m3u8
 #EXTINF:-1,NTV
 http://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3&&app=7c4bb802-0c41-409e-8cd2-799984995694
 #EXTINF:-1,ATV
@@ -351,6 +353,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
