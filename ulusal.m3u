@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1,TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT 2
+http://tv-trt2.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,TRT HABER
 https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
 #EXTINF:-1,TRT ÇOCUK
@@ -9,6 +11,8 @@ https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TRT TÜRK
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT ARABİ
+http://tv-trtarabi.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TRT SPOR
@@ -355,5 +359,6 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
