@@ -52,7 +52,7 @@ https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 #EXTINF:-1,KANAL B
 https://baskentaudiovideo.xyz/LiveApp/streams/mUE22idl26lA1683879097431.m3u8
 #EXTINF:-1,TÜRKMENELİ
-http://116.203.71.169/hls/stream1.m3u8
+http://tv.online.tm/hls/ch004_md/index.m3u8
 #EXTINF:-1,BENGÜ TÜRK
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 #EXTINF:-1,TV8
@@ -329,6 +329,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
