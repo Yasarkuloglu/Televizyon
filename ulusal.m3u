@@ -51,8 +51,6 @@ https://trn03.tulix.tv/gt-sozcu-tv/playlist.m3u8
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1,TELE-1
 https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
-#EXTINF:-1,KRT TV
-https://krtdvr.blutv.com/blutv_krt_live_dvr/live_720p4350000kbps/index.m3u
 #EXTINF:-1,TİVİ 6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 #EXTINF:-1,KANAL B
@@ -335,6 +333,7 @@ http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 https://live.euromediacenter.com/ezgitv/index.m3u8
 #EXTINF:-1,ADA TV
 https://yayin1.canlitv.fun/live/kibrisadatv.stream/playlist.m3u8
+
 
 
 
